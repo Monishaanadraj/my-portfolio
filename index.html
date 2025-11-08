@@ -18,6 +18,7 @@
         <nav class="navbar">
             <a href="#home" class="active">Home</a>
             <a href="#about">About</a>
+            <a href="#skills">Skills</a>
             <a href="#services">Services</a>
             <a href="#portfolio">Projects</a>
             <a href="#contact">Contact</a>
@@ -35,15 +36,14 @@
                 <a href="https://www.linkedin.com/in/monisha-a-80ba78255"><i class='bx bxl-linkedin'></i></a>
                 <a href="https://github.com/Monishaanadraj"><i class='bx bxl-github'></i></span></a>
 
+
             </div>
-
-            <a href="Resume_Monisha_A.pdf" class="btn" onclick="downloadCV()">Download Resume</a>
-
+            <a href="Monisha_A_Resume.pdf" class="btn" onclick="downloadCV()">Download Resume</a>
             <script>
                 function downloadCV() {
                     const link = document.createElement('a');
-                    link.href = "Resume_Monisha_A.pdf" // Must be a valid relative or full path
-                    link.download = 'Resume_Monisha_A.pdf'; // File name to save as
+                    link.href = "Monisha_A_Resume.pdf" // Must be a valid relative or full path
+                    link.download = 'Monisha_A_Resume.pdf'; // File name to save as
                     document.body.appendChild(link);
                     link.click();
                     document.body.removeChild(link);
@@ -63,63 +63,61 @@
 
         <div class="about-content">
             <h2 class="heading">About <span>Me</span></h2>
-            <h3>Full Stack Developer</h3>
-            <p>I'm a dedicated Full Stack Developer with a strong passion for creating dynamic, user-friendly web
-                applications. With experience in both frontend and backend technologies like React.js, Node.js, Express,
-                and MySQL, I enjoy building complete solutions from responsive interfaces to robust server-side logic.
-                I'm committed to writing clean, efficient code and continuously learning new tools and frameworks to
-                improve my craft. Whether working independently or in a team, I love turning ideas into real-world
-                products that make an impact.</p>
-            <!-- <a href="#services" class="btn">Read More</a> -->
+            <p>
+                I’m <strong>Monisha A</strong>, a passionate <strong>Full Stack Web Developer</strong> based in
+                Bengaluru, India.
+                I recently completed my <strong>MCA at Kristu Jayanti College</strong> and have hands-on experience in
+                building
+                full-stack applications using <strong>React.js, Node.js, Express.js, and MySQL</strong>.
+            </p>
+            <p>
+                I enjoy transforming creative ideas into responsive and functional web applications.
+                I have <strong>basic knowledge of Figma</strong>, which helps me design simple UI layouts and convert
+                design mockups into clean, user-friendly interfaces.
+            </p>
+            <p>
+                I’m currently seeking opportunities to contribute to innovative development teams,
+                enhance my technical skills, and grow as a web developer.
+            </p>
         </div>
     </section>
 
-    <!-- <section class="education" id="education">
-        <h2 class="heading">Education</h2>
-
-        <div class="education-container">
-            <div class="education-box">
-                <div class="education-detail">
-                    <h3>Master of Computer Applications (MCA)</h3>
-                    <h4>2023 - 2025</h4>
-                </div>
-                <p>KRISTU JAYANTI (DEEMED TO BE UNIVERSITY),
-                    <span>Bengaluru, Karnataka</span>
-                </p>
-
+    <section class="skills" id="skills">
+        <h2 class="heading">Technical <span>Skills</span></h2>
+        <div class="skills-container">
+            <div class="skills-box"><img src="images/html.png" alt="HTML">
+                <p>HTML</p>
             </div>
-
-            <div class="education-box">
-                <div class="education-detail">
-                    <h3>Bachelor of Computer Applications (BCA)</h3>
-                    <h4>2020 - 2023</h4>
-                </div>
-                <p>SOUNDARYA INSTITUTE OF MANAGEMENT AND SCIENCE,
-                    <span>Bengaluru, Karnataka</span>
-                </p>
+            <div class="skills-box"><img src="images/css.png" alt="CSS">
+                <p>CSS</p>
             </div>
-
-            <div class="education-box">
-                <div class="education-detail">
-                    <h3>12th in PCMB </h3>
-                    <h4>2019 - 2020</h4>
-                </div>
-                <p>GOVERNMENT PU COLLEGE FOR GIRLS,
-                    <span>Malleshwaram, Bengaluru, Karnataka</span>
-                </p>
+            <div class="skills-box"><img src="images/js.png" alt="JavaScript">
+                <p>JavaScript</p>
             </div>
-
-            <div class="education-box">
-                <div class="education-detail">
-                    <h3>SSLC (10th)</h3>
-                    <h4>2017 - 2018</h4>
-                </div>
-                <p>GOVERNMENT HIGH SCHOOL ABBIGERE,
-                    <span>Bengaluru, Karnataka</span>
-                </p>
+            <div class="skills-box"><img src="images/react.png" alt="React.js">
+                <p>React.js</p>
+            </div>
+            <div class="skills-box"><img src="images/node.png" alt="Node.js">
+                <p>Node.js</p>
+            </div>
+            <div class="skills-box"><img src="images/mysql.png" alt="MySQL">
+                <p>MySQL</p>
+            </div>
+            <div class="skills-box"><img src="images/git.png" alt="Git">
+                <p>Git</p>
+            </div>
+            <div class="skills-box"><img src="images/github.png" alt="GitHub">
+                <p>GitHub</p>
+            </div>
+            <div class="skills-box"><img src="images/vs.png" alt="VS Code">
+                <p>VS Code</p>
+            </div>
+            <div class="skills-box"><img src="images/figma.png" alt="Figma">
+                <p>Figma (basic)</p>
             </div>
         </div>
-    </section> -->
+    </section>
+
 
 
     <section class="services" id="services">
@@ -127,24 +125,30 @@
 
         <div class="services-container">
             <div class="services-box">
-                <i class='bx bx-code-alt'></i>
-                <h3>Web Development</h3>
+                <div class="service-header">
+                    <i class='bx bx-code-alt'></i>
+                    <h3>Web Development</h3>
+                </div>
                 <p> I provide complete end-to-end web application development, from wireframes to live deployment. This
                     includes planning, frontend and backend coding and database integration
                 </p>
             </div>
 
             <div class="services-box">
-                <i class='bx bxl-react'></i>
-                <h3>Frontend Development</h3>
+                <div class="service-header">
+                    <i class='bx bxl-react'></i>
+                    <h3>Frontend Development</h3>
+                </div>
                 <p> I build fast, responsive, and accessible user interfaces using React.js. My work emphasizes clean
                     component architecture and reusable UI patterns.
                 </p>
             </div>
 
             <div class="services-box">
-                <i class='bx bxl-nodejs'></i>
-                <h3>Backend Development</h3>
+                <div class="service-header">
+                    <i class='bx bxl-nodejs'></i>
+                    <h3>Backend Development</h3>
+                </div>
                 <p> I develop secure and scalable server-side applications using Node.js and Express. Services include
                     creating RESTful APIs, user authentication systems, real-time features, and seamless third-party API
                     integrations.
@@ -152,8 +156,10 @@
             </div>
 
             <div class="services-box">
-                <i class='bx bxs-data'></i>
-                <h3>Database Management(Mysql)</h3>
+                <div class="service-header">
+                    <i class='bx bxs-data'></i>
+                    <h3>Database Management (MySQL)</h3>
+                </div>
                 <p> I design and manage efficient relational database structures with MySQL. My services include schema
                     design, query optimization, data migrations, and secure integration with backend applications for
                     seamless data flow.
@@ -161,10 +167,13 @@
             </div>
 
             <div class="services-box">
-                <i class='bx bxl-figma'></i>
-                <h3>UI Implementation from Figma</h3>
-                <p>I convert your design mockups from Figma into fully functional, responsive websites. Every component
-                    is coded to match the design precisely, ensuring pixel-perfect accuracy and smooth user interaction.
+                <div class="service-header">
+                    <i class='bx bxl-figma'></i>
+                    <h3>Basic Figma Design Skills</h3>
+                </div>
+                <p>I have a basic understanding of Figma and can create simple UI layouts and prototypes.
+                    I use it mainly to visualize web page structures, design clean interfaces, and collaborate
+                    with developers and designers to translate ideas into interactive web applications.
                 </p>
             </div>
         </div>
@@ -178,7 +187,7 @@
 
             <!-- Fleet Management Project -->
             <div class="portfolio-box">
-                <h2>Fleet Management System</h2>
+                <h3>Fleet Management System</h3>
                 <img src="images/bg2.jpg" alt="Fleet Management">
                 <div class="portfolio-layer">
                     <p>
@@ -186,15 +195,11 @@
                         bookings efficiently. Built using
                         React.js, Node.js, and MySQL.
                     </p>
-                    <div class="tech-icons">
-                        <i class="fab fa-react"></i>
-                        <i class="fab fa-js"></i>
-                        <i class="fab fa-node-js"></i>
-                        <i class="fas fa-database"></i>
 
+                    <div class="view-link">
                         <a href="https://github.com/sherpavector/Fleet-Management" class="external-link"
                             target="_blank">
-                            <i class='bx bx-link-external'></i>
+                            <i class='bx bx-link-external'>View on GitHub</i>
                         </a>
                     </div>
                 </div>
@@ -202,7 +207,7 @@
 
             <!-- Art Gallery Project -->
             <div class="portfolio-box">
-                <h2>Art Gallery Management</h2>
+                <h3>Art Gallery Management</h3>
                 <img src="images/art.jpg" alt="Art Gallery">
                 <div class="portfolio-layer">
                     <p>
@@ -210,15 +215,11 @@
                         Features a shopping cart system, custom artwork ordering, payment
                         simulation, and order cancellation.
                     </p>
-                    <div class="tech-icons">
-                        <i class="fab fa-html5"></i>
-                        <i class="fab fa-css3-alt"></i>
-                        <i class="fab fa-php"></i>
-                        <i class="fas fa-database"></i>
 
+                    <div class="view-link">
                         <a href="https://github.com/Monishaanadraj/Art-Gallery-Management" class="external-link"
                             target="_blank">
-                            <i class='bx bx-link-external'></i>
+                            <i class='bx bx-link-external'>View on GitHub</i>
                         </a>
                     </div>
                 </div>
@@ -226,45 +227,38 @@
 
             <!-- Crowdfunding Project -->
             <div class="portfolio-box">
-                <h2>Crowdfunding Platform</h2>
+                <h3>Crowdfunding Platform</h3>
                 <img src="images/funding.jpg" alt="Crowdfunding">
                 <div class="portfolio-layer">
                     <p>
                         Built using React, Node.js, and MySQL, this platform allows users to create campaigns, donate,
                         and track funding in real time. Includes secure login, campaign categories, and admin panel.
                     </p>
-                    <div class="tech-icons">
-                        <i class="fab fa-react"></i>
-                        <i class="fab fa-js"></i>
-                        <i class="fab fa-node-js"></i>
-                        <i class="fas fa-database"></i>
 
+                    <div class="view-link">
                         <a href="https://github.com/Monishaanadraj/Crowd-funding-" class="external-link"
                             target="_blank">
-                            <i class='bx bx-link-external'></i>
+                            <i class='bx bx-link-external'>View on GitHub</i>
                         </a>
                     </div>
+
                 </div>
             </div>
 
             <!-- Currency Detection Project -->
             <div class="portfolio-box">
-                <h2>Fake Indian Currency Detection</h2>
+                <h3>Fake Indian Currency Detection</h3>
                 <img src="images/currency.jpg" alt="Currency Detection">
                 <div class="portfolio-layer">
                     <p>
                         A deep learning-based Flask application using the Xception model to detect fake ₹2000 and ₹500
                         currency notes. Achieved 97% accuracy using TensorFlow and Keras.
                     </p>
-                    <div class="tech-icons">
-                        <i class="fab fa-python"></i>
-                        <i class="fas fa-brain"></i>
-                        <i class="fas fa-robot"></i>
-                        <i class="fas fa-flask"></i>
 
+                    <div class="view-link">
                         <a href="https://github.com/Monishaanadraj/Fake-Indian-Currency-Detection-"
                             class="external-link" target="_blank">
-                            <i class='bx bx-link-external'></i>
+                            <i class='bx bx-link-external'>View on GitHub</i>
                         </a>
                     </div>
                 </div>
@@ -272,21 +266,17 @@
 
             <!-- Food Ordering Project -->
             <div class="portfolio-box">
-                <h2>Online Food Ordering System</h2>
+                <h3>Online Food Ordering System</h3>
                 <img src="images/food.jpg" alt="Food Ordering">
                 <div class="portfolio-layer">
                     <p>
                         Developed a full-stack food delivery system with product listing, login, and order management.
                         Built using React.js frontend, Node.js backend, and MySQL database.
                     </p>
-                    <div class="tech-icons">
-                        <i class="fab fa-react"></i>
-                        <i class="fab fa-js"></i>
-                        <i class="fab fa-node-js"></i>
-                        <i class="fas fa-database"></i>
 
+                    <div class="view-link">
                         <a href="https://github.com/Monishaanadraj/Food-Zone-" class="external-link" target="_blank">
-                            <i class='bx bx-link-external'></i>
+                            <i class='bx bx-link-external'>View on GitHub</i>
                         </a>
                     </div>
                 </div>
